@@ -20,6 +20,7 @@ public class SpringServiceController {
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET,headers="Accept=application/json")
 	public User getUser(@PathVariable int id) {
 		User user=userService.getUserById(id);
+		System.out.println("Change in Git");
 		return user;
 	}
 	
